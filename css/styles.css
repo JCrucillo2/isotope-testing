@@ -1,0 +1,50 @@
+:root,
+html {
+    --btn-default: #212121;
+    --btn-primary: #4900af;
+    --btn-light: #eeeeee;
+}
+
+body {
+    font-size: 18px; /* fallback font */
+    font-family: "Source Sans Pro", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+/* header style */
+header {
+    padding: 40px;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+/* button */
+.buttonSort:active,
+.buttonSort.is-checked {
+    background-color: var(--btn-primary);
+    color: var(--btn-light);
+}
+
+/* item specific styles */
+.item-details img {
+    width: 100%;
+}
+
+.script {
+    background-color: var(--btn-default);
+    color: var(--btn-light);
+}
+
+.row {
+    margin-bottom: 16px;
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Isotope Dynamic Layout</title>
+
+        <!-- stylesheets -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/styles.css" />
+
+        <!-- google fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700;900&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- scripts -->
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+        <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+        <script src="./js/main.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Isotope Image Masonry</h1>
+        </header>
+
+        <main>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="item-menu">
+                            <ul>
+                                <li
+                                    data-filter="*"
+                                    class="btn btn-dark buttonSort is-checked"
+                                >
+                                    All
+                                </li>
+                                <li
+                                    data-filter=".meme"
+                                    class="btn btn-dark buttonSort"
+                                >
+                                    Memes
+                                </li>
+                                <li
+                                    data-filter=".scenery"
+                                    class="btn btn-dark buttonSort"
+                                >
+                                    Scenery
+                                </li>
+                                <li
+                                    data-filter=".random"
+                                    class="btn btn-dark buttonSort"
+                                >
+                                    Random
+                                </li>
+                                <li
+                                    data-filter=".script"
+                                    class="btn btn-dark buttonSort"
+                                >
+                                    Script
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item-details">
+                    <div class="col-md-4 item meme">
+                        <img src="./img/dog.jpg" alt="dog" />
+                    </div>
+                    <div class="col-md-4 item random">
+                        <img src="./img/dogwide.jpg" alt="dogwide" />
+                    </div>
+                    <div class="col-md-4 item script">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Et dolorum consectetur necessitatibus adipisci
+                            possimus natus commodi sapiente earum quibusdam
+                            laudantium obcaecati, sequi consequatur beatae.
+                            Optio, quis eveniet explicabo nihil deserunt
+                            doloribus ipsum repellendus alias eum earum sit,
+                            reiciendis facere suscipit accusantium! Laborum
+                            dignissimos magni necessitatibus fugiat asperiores
+                            qui sit nemo molestiae. Nostrum debitis fuga, ipsum
+                            laborum dolores eos consequatur consequuntur.
+                        </p>
+                    </div>
+                    <div class="col-md-4 item meme">
+                        <img src="./img/meme.jpg" alt="meme" />
+                    </div>
+                    <div class="col-md-4 item scenery">
+                        <img src="./img/mountain1.jpg" alt="mountain1" />
+                    </div>
+                    <div class="col-md-4 item meme">
+                        <img src="./img/hey.jpg" alt="hey" />
+                    </div>
+                    <div class="col-md-4 item scenery">
+                        <img src="./img/mountain2.jpg" alt="mountain2" />
+                    </div>
+                    <div class="col-md-4 item script">
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit. Necessitatibus illum odit asperiores
+                            praesentium deleniti quia cupiditate vero, quae
+                            quidem sit. Eius illo ex quas earum beatae obcaecati
+                            sunt, nulla hic.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
