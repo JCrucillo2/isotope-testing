@@ -7,7 +7,7 @@ html {
 
 body {
     font-size: 18px; /* fallback font */
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: "Quicksand", sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -40,9 +40,14 @@ header h1 {
     width: 100%;
 }
 
+.item {
+    margin-bottom: 10px;
+}
+
 .script {
     background-color: var(--btn-default);
     color: var(--btn-light);
+    padding: 1rem;
 }
 
 .row {

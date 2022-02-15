@@ -1,12 +1,14 @@
-let $grid = $(".item-details").isotope({
-    // options
-});
+$(".container").imagesLoaded(function () {
+    let $grid = $(".item-details").isotope({
+        // options
+    });
 
-$(".item-menu").on("click", "li", function () {
-    let filterValue = $(this).attr("data-filter");
+    $(".item-menu").on("click", "li", function () {
+        let filterValue = $(this).attr("data-filter");
 
-    $grid.imagesLoaded().progress(function () {
+        // $grid.imagesLoaded().progress(function () {
         $grid.isotope({ filter: filterValue });
+        // });
     });
 });
 
